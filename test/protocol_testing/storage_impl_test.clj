@@ -6,6 +6,7 @@
 
 (t/use-fixtures :each
   (fn [f]
+    ;; эта часть для для настоящей реализации точно будет отличаться от таковой для storage-fake-test
     (with-bindings (sut/binding-map (sut/build-db))
       (f))))
 
